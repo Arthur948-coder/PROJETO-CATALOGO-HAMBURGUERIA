@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Hamburgueria</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .cabecalho {
+            background-color: #F0F0F8;
+        }
+
+        .header {
+            height: 120px;
+            background-color: #F0F0F8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .header img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .link-menu {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+
+        .link-menu a {
+            font-size: 18px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .link-menu a:hover {
+            color: red;
+            transition: 0.15s ease-in-out;
+        }
+
+        .modo-dark img {
+            width: 40px;
+            height: auto;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            cursor: pointer;
+        }
+
+        .buscar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .buscar input {
+            height: 35px;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 250px;
+        }
+
+        .buscar button {
+            background-color: #252A30;
+            color: white;
+            height: 35px;
+            width: 80px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .produto1, .produto2, .produto3, .produto4, .produto5, .produto6, .produto7, .produto8, .produto9 {
+            width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            transition: transform 0.2s;
+        }
+
+        .produto1:hover, .produto2:hover, .produto3:hover, .produto4:hover, .produto5:hover,
+        .produto6:hover, .produto7:hover, .produto8:hover, .produto9:hover {
+            transform: scale(1.05);
+        }
+
+        .produto1 img, .produto2 img, .produto3 img, .produto4 img, .produto5 img,
+        .produto6 img, .produto7 img, .produto8 img, .produto9 img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .produto1 h3, .produto2 h3, .produto3 h3, .produto4 h3, .produto5 h3,
+        .produto6 h3, .produto7 h3, .produto8 h3, .produto9 h3 {
+            margin: 10px 0 5px;
+        }
+
+        .produto1 p, .produto2 p, .produto3 p, .produto4 p, .produto5 p,
+        .produto6 p, .produto7 p, .produto8 p, .produto9 p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .preco1, .preco2, .preco3, .preco4, .preco5, .preco6, .preco7, .preco8, .preco9 {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #e53935;
+        }
+
+        body.dark-mode {
+            background-color: #121212;
+            color: white;
+        }
+
+        body.dark-mode .produto1, body.dark-mode .produto2, body.dark-mode .produto3,
+        body.dark-mode .produto4, body.dark-mode .produto5, body.dark-mode .produto6,
+        body.dark-mode .produto7, body.dark-mode .produto8, body.dark-mode .produto9 {
+            background-color: #1e1e1e;
+            color: white
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+
+            .link-menu {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px 0;
+            }
+
+            .modo-dark img {
+                width: 30px;
+                top: 10px;
+                right: 10px;
+            }
+
+            .buscar {
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            .buscar input {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .produtos {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        html, body {
+            height: auto;
+            min-height: 100vh;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <div class="header">
+            <img src="/img/images (1).png" alt="logo Hamburgueria">
+        </div>
+
+        <div class="link-menu">
+            <a>Produtos</a>
+            <a href="quemsomos.html">Quem Somos</a>
+            <a>Login</a>
+        </div>
+
+        <div>
+            <a class="modo-dark">
+                <img onclick="toggleDarkMode()" src="/img/pngtree-night-mode-line-icon-vector-png-image_6651460.png" alt="modo escuro">
+            </a>
+        </div>
+    </div>
+
+    <div class="buscar">
+        <input placeholder="Buscar por Nome" type="text" name="produto" id="inputBusca">
+        <button>Buscar</button>
+    </div>
+
+    <div class="produtos">
+        <div class="produto1">
+            <img src="/img/loucosporti1.webp" alt="Hambúrguer Clássico">
+            <h3>Hambúrguer Clássico</h3>
+            <p>Pão, carne 180g, queijo, alface e tomate.</p>
+            <span class="preco1">R$ 24,90</span>
+        </div>
+
+        <div class="produto2">
+            <img src="/img/Burgers.ComeggFoto-Rodrigo-Azevedo.jpg" alt="Hambúrguer Bacon">
+            <h3>Hambúrguer Bacon</h3>
+            <p>Pão, carne 180g, bacon, queijo, alface e tomate.</p>
+            <span class="preco2">R$ 34,90</span>
+        </div>
+
+        <div class="produto3">
+            <img src="/img/images (10).jpeg" alt="Hambúrguer Chicken">
+            <h3>Hambúrguer Chicken</h3>
+            <p>Pão, frango 180g, queijo, alface e tomate.</p>
+            <span class="preco3">R$ 29,90</span>
+        </div>
+
+        <div class="produto4">
+            <img src="/img/original.png" alt="Hambúrguer Cheddar">
+            <h3>Duplo Cheddar</h3>
+            <p>2 Carnes artesanais ,cebola caramelizada, queijo cheddar , maionese especial.</p>
+            <span class="preco4">R$ 39,90</span>
+        </div>
+
+        <div class="produto5">
+            <img src="/img/images (12).jpeg" alt="Porção batata frita">
+            <h3>Porção pequena batata frita</h3>
+            <p>porção batata frita 100g</p>
+            <span class="preco5">R$ 7,90</span>
+        </div>
+
+        <div class="produto6">
+            <img src="/img/4268eb71-97df-4142-bb22-c8f0a4b7fea3-medium.jpg" alt="Porção batata frita">
+            <h3>BATATA GOURMET/ MEDIA</h3>
+            <p>300 gramas batata, cheddar, catupiry ,queijo , bacon</p>
+            <span class="preco6">R$ 16,90</span>
+        </div>
+
+        <div class="produto7">
+            <img src="/img/4268eb71-97df-4142-bb22-c8f0a4b7fea3-medium.jpg" alt="Porção batata frita">
+            <h3>BATATA GOURMET/ GRANDE</h3>
+            <p>450 gramas batata , queijo, cheddar catupiry, queijo ,bacon</p>
+            <span class="preco7">R$ 25,90</span>
+        </div>
+
+        <div class="produto8">
+            <img src="/img/jhyp7k5kg7tspzdg042xiv13g1at.png" alt="Porção batata frita">
+            <h3>Refri lata 350 ml</h3>
+            <p>Coca lata,fanta uva, fanta laranja,guaraná</p>
+            <span class="preco8">R$ 4,90</span>
+        </div>
+
+        <div class="produto9">
+            <img src="/img/original.png" alt="Porção batata frita">
+            <h3>Duplo salada</h3>
+            <p>2 carnes artesanais, cheddar cremoso, bacon defumado,alface,tomate, maionese especial.</p>
+            <span class="preco9">R$ 34,90</span>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+
+</html>

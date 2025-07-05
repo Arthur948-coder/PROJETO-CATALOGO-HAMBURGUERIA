@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 180px;
+    background-color: #F0F0F8;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0px;
+    margin-right: 20px;
+    position: sticky;
+    top: 0px; 
+}
+
+.link-menu {
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 550px;
+    gap: 150px;
+}
+
+body {
+    background-color: white;
+}
+
+.modo-dark img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    cursor: pointer;
+}
+
+.cabecalho {
+    background-color: #F0F0F8;
+}
+
+.buscar {
+    height: 250px;
+    border-radius: 20px;
+    padding-left: 5px;
+    position: absolute;
+    left: 750px;
+    top: 200px;
+}
+
+.buscar input {
+    height: 30px;
+    width: auto;
+    border-radius: 5px;
+    padding-left: 65px;
+}
+
+.buscar button {
+    background-color: #252A30;
+    color: white;
+    height: 30px;
+    width: 75px;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 15px;
+}
+
+.link-menu a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.link-menu a:hover {
+    color: red;
+    transition: 0.15s ease-in-out;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.produtos {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 40px;
+  margin-top: 300px; /* espaço para não colidir com o topo */
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+
+.produto1 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto1:hover {
+  transform: scale(1.05);
+}
+
+.produto1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto1 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto1 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco1 {
+  display: block;
+  margin-top: 70px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto2 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto2:hover {
+  transform: scale(1.05);
+}
+
+.produto2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto2 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto2 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco2 {
+  display: block;
+  margin-top: 60px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto3 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto3:hover {
+  transform: scale(1.05);
+}
+
+.produto3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto3 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto3 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco3 {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto4 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto4:hover {
+  transform: scale(1.05);
+}
+
+.produto4 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto4 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto4 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco4 {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto5 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto5:hover {
+  transform: scale(1.05);
+}
+
+.produto5 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto5 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto5 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco5 {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto6 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto6:hover {
+  transform: scale(1.05);
+}
+
+.produto6 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto6 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto6 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco6 {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto7 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto7:hover {
+  transform: scale(1.05);
+}
+
+.produto7 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto7 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto7 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco7 {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto8 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto8:hover {
+  transform: scale(1.05);
+}
+
+.produto8 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto8 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto8 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco8 {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.produto9 {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.produto9:hover {
+  transform: scale(1.05);
+}
+
+.produto9 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produto9 h3 {
+  margin: 10px 0 5px;
+}
+
+.produto9 p {
+  font-size: 14px;
+  color: #555;
+}
+
+.preco9 {
+  display: block;
+  margin-top: 30px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+html, body {
+  height: auto;
+  min-height: 100vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+}
