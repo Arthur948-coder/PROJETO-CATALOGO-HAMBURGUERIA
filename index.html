@@ -10,6 +10,8 @@
 
 <body>
 
+    <div class="mascara-formulario"></div>
+
     <div class="cabecalho">
 
         <div class="header">
@@ -17,9 +19,9 @@
         </div>
 
         <div class="link-menu">
-            <a>Produtos</a>
+            <a href="index.html">Produtos</a>
             <a href="quemsomos.html">Quem Somos</a>
-            <a>Login</a>
+            <a onclick="login()">Login</a>
         </div>
 
         <div>
@@ -28,6 +30,28 @@
                     alt="modo escuro">
             </a>
         </div>
+
+    </div>
+
+    <div>
+        <form class="formulario-login" action="https://formcarry.com/s/uiCpeXcizUg" method="POST"
+            enctype="multipart/form-data">
+            <h1>Faça seu Login!</h1>
+            <a onclick="fecharformulario()">
+                <img  src="img/61155.png" alt="botao fechar" class="fechar-formulario">
+            </a>
+            <br>
+            <input placeholder="E-mail" type="email" name="E-mail" autocomplete="email">
+            <br>
+            <input placeholder="Senha" type="password" name="Senha" autocomplete="current-password">
+            <br>
+            <button type="submit">Login</button>
+            <br>
+            <a class="esqueci-senha">Esqueci a senha</a>
+            <br>
+            <a class="cadastre-se">Não tem login? Cadastre-se</a>
+        </form>
+
 
     </div>
 
@@ -101,6 +125,11 @@
         </div>
 
     </div>
+
+    <a href="https://wa.me/5585994324535?text=Quero%20fazer%20um%20or%C3%A7amento!" target="_blank"
+        class="link-whatsapp">
+        <img src="/img/whatsapp.png" alt="link para o whatsapp">
+    </a>
 
 </body>
 <script src="scripts.js"></script>
