@@ -432,8 +432,126 @@ html, body {
   height: auto;
   min-height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+html {
+  overflow-x: hidden;
+}
+
+.produtos span {
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  color: #32915A;
+}
+
+.formulario-login {
+  background-color: #F0F0F8;
+  display: flex;
+  position: absolute;
+  display: inline-block;
+  top: 200px;
+  left: 600px;
+  z-index: 1;
+  border-radius: 5px;
+  padding: 200px;
+  visibility: hidden;
+  border: solid;
+  border-color: black;
+}
+
+.formulario-login input {
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid red;
+  padding-left: 5px;
+  gap: 25px;
+  padding-left: 5px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.formulario-login button {
+    color: white;
+    background-color: #c51111;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.formulario-login h1 {
+  color: black;
+  font-size: 40px; 
+  position: absolute;
+  top: 150px;
+  left: 180px;
+}
+
+
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.link-whatsapp img:hover {
+   transform: scale(1.25);
+}
+ 
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 1;
+}
+
+.fechar-formulario {
+  height: 30px;
+  position: absolute;
+  cursor: pointer;
+  right: 25px;
+  top: 15px;
+}
+
+.logo-form {
+  height: 130px;
+  position: absolute;
+  cursor: pointer;
+  left: 200px;
+  top: 15px;
+}
+
+.esqueci-senha {
+  font-size: 20px;
+  color: black;
+  font: bold;
+  cursor: pointer;
+  position: absolute;
+  left: 240px;
+  margin-top: 30px;
+}
+
+.cadastre-se {
+  font-size: 22px;
+  font: bold;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  left: 190px;
+  margin-top: 120px;
 }
 
 @media (max-width: 768px) {
@@ -493,108 +611,5 @@ html, body {
   .produto9 {
     width: 90%;
   }
-}
 
-.produtos span {
-  display: block;
-  font-weight: bold;
-  font-size: 25px;
-  color: #32915A;
 }
-
-.formulario-login {
-  background-color: gray;
-  display: flex;
-  position: absolute;
-  display: inline-block;
-  top: 200px;
-  left: 600px;
-  z-index: 1;
-  border-radius: 5px;
-  padding: 200px;
-  visibility: hidden;
-}
-
-.formulario-login input {
-  height: 35px;
-  border-radius: 5px;
-  border: 1px solid gray;
-  padding-left: 5px;
-  gap: 25px;
-  padding-left: 5px;
-  padding: 25px;
-  margin-top: 20px;
-}
-
-.formulario-login button {
-    color: white;
-    background-color: #c51111;
-    border-radius: 5px;
-    border: none;
-    width: 200px;
-    height: 50px;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-.formulario-login h1 {
-  color: black;
-  font-size: 40px; 
-  position: absolute;
-  top: 150px;
-  left: 180px;
-}
-
-
-.link-whatsapp img {
-    height: 60px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-.link-whatsapp img:hover {
-   transform: scale(1.25);
-}
- 
-.mascara-formulario {
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-    z-index: 1;
-}
-
-.formulario-login img {
-  height: 30px;
-  position: absolute;
-  cursor: pointer;
-  right: 25px;
-  top: 15px;
-}
-
-.esqueci-senha {
-  font-size: 20px;
-  color: white;
-  font: bold;
-  cursor: pointer;
-  position: absolute;
-  left: 240px;
-  margin-top: 30px;
-}
-
-.cadastre-se {
-  font-size: 22px;
-  font: bold;
-  cursor: pointer;
-  position: absolute;
-  left: 190px;
-  margin-top: 120px;
-}
-
