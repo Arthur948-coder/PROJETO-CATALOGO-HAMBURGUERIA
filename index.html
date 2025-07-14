@@ -25,8 +25,8 @@
         </div>
 
         <div>
-            <a class="modo-dark">
-                <img onclick="toggleDarkMode()" src="/img/pngtree-night-mode-line-icon-vector-png-image_6651460.png"
+            <a class="carrinho">
+                <img src="/img/images (2).png"
                     alt="modo escuro">
             </a>
         </div>
@@ -50,7 +50,32 @@
             <br>
             <a class="esqueci-senha">Esqueci a senha</a>
             <br>
-            <a class="cadastre-se">Não tem login? Cadastre-se</a>
+            <a onclick="cadastro()" class="cadastre-se">Não tem login? Cadastre-se</a>
+        </form>
+
+
+    </div>
+
+    <div>
+        <form class="formulario-cadastro" action="https://formcarry.com/s/uiCpeXcizUg" method="POST"
+            enctype="multipart/form-data">
+            <a onclick="fecharform2()">
+                <img  src="img/61155.png" alt="botao fechar" class="fechar-cadastro">
+            </a>
+            <br>
+            <h1>Cadastre-se</h1>
+            <br>
+            <input placeholder="Nome completo" type="text" autocomplete="name">
+            <br>
+            <input placeholder="Numero de Telefone" type="number" autocomplete="cc-number">
+            <br>
+            <input placeholder="E-mail" type="email" autocomplete="email">
+            <br>
+            <input placeholder="Crie sua senha" type="password" autocomplete="new-password">   
+            <br>
+            <button>Fazer cadastro</button>
+            <br>
+            <a onclick="voltarParaLogin()">Ja tem conta? Fazer Login</a>
         </form>
 
 
